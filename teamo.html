@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.jpg">
+    <title>Te amo</title>
+    <style>
+        *{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .box {
+            position: relative;
+            width: 80%;
+            height: 200px;
+            background-color: white;
+            margin: 0 auto;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        #si{
+            background-color: rgb(195, 93, 247);
+            color: white;
+            border-color: blueviolet;
+            margin: 0 10px;
+        }
+        #no {
+            position: absolute;
+            background-color: red;
+            border-color: brown;
+            color: white;
+        }
+        .img-perros {
+            width: 250px;
+            margin: 0 auto;
+        }
+        .img-peli{
+            width: 250px;
+            margin: 0 auto;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        body{
+            margin: 0 auto;
+            width: 90%;
+            background-image: url("https://static.vecteezy.com/system/resources/previews/002/701/701/non_2x/light-purple-background-with-rectangles-colorful-illustration-with-gradient-rectangles-and-squares-pattern-for-websites-landing-pages-vector.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;           
+        }
+
+        button{
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 45px;
+            height: 30px;
+            font-size: 18px;
+        }
+
+        h2 {
+            color: rgb(57, 15, 96);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Gracias. Te amo :)</h2>
+    <div class="img-perros">
+        <img src="https://static.vecteezy.com/system/resources/previews/016/471/635/non_2x/cute-couple-dogs-in-love-animal-valentine-day-card-invitation-background-vector.jpg">
+    </div>
+    
+</body>
+
+</html>
+
+<script>
+    let btnSi = document.getElementById("si");
+    let btnNo = document.getElementById("no");
+
+    btnNo.addEventListener("mouseenter", function (event) {
+        btnNo.style.top = (Math.floor(Math.random() * 80)) + "%";
+        btnNo.style.left = (Math.floor(Math.random() * 80)) + "%";
+    });
+
+    btnNo.addEventListener("click", function (event) {
+        btnNo.style.top = (Math.floor(Math.random() * 80)) + "%";
+        btnNo.style.left = (Math.floor(Math.random() * 80)) + "%";
+    });
+
+    btnSi.addEventListener("click", function() {
+        window.location = "/teamo.html"
+    });
+
+</script>
